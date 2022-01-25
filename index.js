@@ -1,8 +1,8 @@
 var express=require("express");
 var app=express();
 var bodyParser = require('body-parser');
-var Publishable_Key = 'pk_test_51KCfZWFd29GNXKw9yjRJq67G5JgdE5PryJGEFdRSYsmltK28jg5ICAdZ0WHmvSl36tJsxvIe5eQXmy083AF3exPu001tbLQqAr';
-var Secret_Key = 'sk_test_51KCfZWFd29GNXKw9aWwFr5BSMBCOnjwEjtC26o8YcGk6xkVWonRsPKmi3wb77h1z5VVDCEArU4SIcF8soF7nnk9g00cCqs17s4';
+var Publishable_Key = 'PUBLISHER_KEY';
+var Secret_Key = 'SECRET_KEY';
 const stripe = require('stripe')(Secret_Key);
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
